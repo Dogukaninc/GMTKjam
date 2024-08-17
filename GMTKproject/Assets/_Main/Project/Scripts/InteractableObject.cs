@@ -17,13 +17,16 @@ public class InteractableObject : MonoBehaviour,IDetectable
         
     }
 
+    /// <summary>
+    /// Takes keycode param for interactable object's type
+    /// </summary>
+    /// <param name="keycode"></param>
     public void OnDetectionStarted()
     {
-        Debug.Log("Detection Started");
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("Detection Started");
+        }
     }
 
-    public void OnDetectionEnded()
-    {
-        Debug.Log("Detection Ended");
-    }
 }
