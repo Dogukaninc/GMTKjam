@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using _Main.Project.Scripts.Interfaces;
 using UnityEngine;
 
@@ -21,7 +18,7 @@ public class PlayerDetection : MonoBehaviour
             closestObject = DetectClosestInteractable(detectionCount);
             if (closestObject.TryGetComponent(out IDetectable detectable))
             {
-                detectable.OnDetectionStarted();
+                detectable.OnDetected();
                 SetInteractionPanel(closestObject.transform.position + new Vector3(0, 2, 0));
                 closestObject.GetComponent<SpriteRenderer>().color = Color.red;
             }

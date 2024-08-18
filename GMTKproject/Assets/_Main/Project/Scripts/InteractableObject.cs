@@ -5,23 +5,12 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour,IDetectable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     /// <summary>
     /// Takes keycode param for interactable object's type
     /// </summary>
     /// <param name="keycode"></param>
-    public void OnDetectionStarted()
+    public void OnDetected()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
