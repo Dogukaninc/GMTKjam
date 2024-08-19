@@ -5,19 +5,23 @@ namespace _Main.Project.Scripts.NPC.States
 {
     public class EnemyPatrolState : IState
     {
+        private Enemy _enemy;
+        public EnemyPatrolState(Enemy enemy)
+        {
+            this._enemy = enemy;
+        }
+        
         public void Tick()
         {
-            throw new System.NotImplementedException();
         }
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Enemy Patrol State'ine girdim");
         }
 
         public void OnExit()
         {
-            throw new System.NotImplementedException();
         }
     }
 }

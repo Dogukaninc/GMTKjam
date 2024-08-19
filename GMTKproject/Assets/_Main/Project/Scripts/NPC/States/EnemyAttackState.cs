@@ -5,6 +5,11 @@ namespace _Main.Project.Scripts.NPC.States
 {
     public class EnemyAttackState : IState
     {
+        private Enemy _enemy;
+        public EnemyAttackState(Enemy enemy)
+        {
+            this._enemy = enemy;
+        }
         public void Tick()
         {
             throw new System.NotImplementedException();
@@ -12,7 +17,8 @@ namespace _Main.Project.Scripts.NPC.States
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Enemy Attack State'ine girdim");
+
         }
 
         public void OnExit()

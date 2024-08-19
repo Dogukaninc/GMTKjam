@@ -8,14 +8,15 @@ public class PlayerMutiationController : MonoBehaviour
     [SerializeField] private Vector3 mutationScale;
     [SerializeField] private Ease scalingEase;
     [SerializeField] private float mutuationTime;
-
+    
     [SerializeField] private ParticleSystem poofParticle;
-
     [SerializeField] private Transform playerRenderer;
 
-    /// <summary>
-    /// Peyniri yedikten sonra mutasyonda kalma süresi olsun süre bitince normale dömsün
-    /// </summary>
+    [Header("Mutant Mouse Variables")]
+    [SerializeField] private Sprite bigMouseSprite;
+    [SerializeField] private Animator mutantAnimator;
+    public bool canMutate;
+    
     void Start()
     {
     }
@@ -30,7 +31,15 @@ public class PlayerMutiationController : MonoBehaviour
 
     private void MutatePlayer()
     {
-        poofParticle.Play();
-        playerRenderer.transform.DOScale(mutationScale, mutuationTime).SetEase(scalingEase);
+        Instantiate(poofParticle.gameObject, transform.position, Quaternion.identity);
+        StartCoroutine(WaitUntilParticleFinish());
+        // transform.DOScale(mutationScale, mutuationTime).SetEase(scalingEase);
+        //playerRenderer.GetComponent<Animator>().runtimeAnimatorController = mutantAnimator.runtimeAnimatorController;
+    }
+
+    IEnumerator WaitUntilParticleFinish()
+    {
+        yield return new WaitForSeconds(0.7f);
+        playerRenderer.GetComponent<SpriteRenderer>().sprite = bigMouseSprite;
     }
 }

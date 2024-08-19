@@ -11,6 +11,7 @@ namespace _Main.Project.Scripts.NPC
         private Rigidbody2D _rigidbody2D;
         private int currentTargetIndex;
 
+        [field:SerializeField]public bool isEnemyDetectedPlayer { get; set; }
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -33,8 +34,9 @@ namespace _Main.Project.Scripts.NPC
                 transform.rotation = Quaternion.Euler(0, 180, 0);
             }
         }
+        
 
-        private IEnumerator PatrolRoutine()
+        public IEnumerator PatrolRoutine()
         {
             while (true)
             {
@@ -45,7 +47,7 @@ namespace _Main.Project.Scripts.NPC
             }
         }
 
-        private IEnumerator PatrolMovement(Vector3 targetPosition)
+        public IEnumerator PatrolMovement(Vector3 targetPosition)
         {
             while (Vector3.Distance(transform.position, targetPosition) > 0.5f)
             {

@@ -5,16 +5,19 @@ namespace _Main.Project.Scripts.NPC.States
 {
     public class EnemyIdleState : IState
     {
-        /// <summary>
-        /// Enemy bu state de olduğu yerde durup bekleyecek nefes alıp verecek
-        /// bu state e genelde patrol olurken target pointlere geldiğinde bir süre beklemek için girecek
-        /// </summary>
+        private Enemy _enemy;
+        public EnemyIdleState(Enemy enemy)
+        {
+            this._enemy = enemy;
+        }
         public void Tick()
         {
+            
         }
 
         public void OnEnter()
         {
+            Debug.Log("Enemy Idle State'ine girdim");
         }
 
         public void OnExit()
