@@ -1667,6 +1667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1167737227}
+  - component: {fileID: 1167737233}
   - component: {fileID: 1167737229}
   - component: {fileID: 1167737231}
   - component: {fileID: 1167737228}
@@ -1737,7 +1738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab26cfe95915154baa144d8281680e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 250
+  movementSpeed: 5
   jumpForce: 250
   groundLayer:
     serializedVersion: 2
@@ -1823,6 +1824,19 @@ PolygonCollider2D:
       - {x: 1.0116343, y: -0.10131657}
       - {x: 0.83912563, y: 0.07620007}
   m_UseDelaunayMesh: 0
+--- !u!114 &1167737233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167737226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd44e601207342a4ba96c908e0a94bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 506865425}
 --- !u!1 &1180028265
 GameObject:
   m_ObjectHideFlags: 0

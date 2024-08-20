@@ -13,17 +13,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform raycastOrigin;
     [SerializeField] private Transform playerFeetPosition;
     [SerializeField] private float slopeCheckDistance;
-
     [SerializeField] private float slowDownMultiplier;
 
     private float horizontalInput;
 
     private Rigidbody2D _rigidbody;
     private RaycastHit2D _hit2D;
+    private PlayerAnimationHandler _animationHandler;
 
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animationHandler = GetComponent<PlayerAnimationHandler>();
     }
 
     void Update()
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
         {
             _rigidbody.velocity -= new Vector2(0, 1 * slowDownMultiplier * Time.deltaTime);
         }
-
+        
         Debug.Log(IsGrounded());
     }
 
@@ -49,7 +50,9 @@ public class PlayerController : MonoBehaviour
 
     private void ControlMovement()
     {
-        _rigidbody.velocity = new Vector2(horizontalInput * movementSpeed * Time.deltaTime, _rigidbody.velocity.y);
+        _rigidbody.velocity = new Vector2(horizontalInput, _rigidbody.velocity.y);
+        _animationHandler.PlayRunAnimation(Mathf.Abs(horizontalInput));
+
         if (horizontalInput > 0)
         {
             transform.localRotation = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);

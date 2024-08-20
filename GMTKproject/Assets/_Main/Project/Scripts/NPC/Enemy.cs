@@ -55,7 +55,6 @@ namespace _Main.Project.Scripts.NPC
                 _rigidbody2D.velocity = direction * movementSpeed * Time.deltaTime;
                 yield return null; // Bir sonraki frame'i bekleyin
             }
-
             _rigidbody2D.velocity = Vector2.zero;
         }
         

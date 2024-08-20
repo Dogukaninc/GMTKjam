@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
@@ -33,8 +32,6 @@ public class PlayerMutiationController : MonoBehaviour
     {
         Instantiate(poofParticle.gameObject, transform.position, Quaternion.identity);
         StartCoroutine(WaitUntilParticleFinish());
-        // transform.DOScale(mutationScale, mutuationTime).SetEase(scalingEase);
-        //playerRenderer.GetComponent<Animator>().runtimeAnimatorController = mutantAnimator.runtimeAnimatorController;
     }
 
     IEnumerator WaitUntilParticleFinish()

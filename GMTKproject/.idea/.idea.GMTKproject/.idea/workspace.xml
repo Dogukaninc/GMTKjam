@@ -7,37 +7,11 @@
     <list default="true" id="87b84e33-272d-4fb6-9108-293c526b687b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTKproject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTKproject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/4x4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/4x4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8153.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8153.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8154.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8154.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8155.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8155.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8156.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8156.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8157.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8157.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8158.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8158.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8159.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8159.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8160.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8161.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/IMG_8161.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/SlopeRamp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Sprites/SlopeRamp.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/--ENVIRONMENT--.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/--ENVIRONMENT--.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Animations/MouseRenderer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Art/Animations/MouseRenderer.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/Art/Animations/Walking.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Art/Animations/Walking.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/EnemyTriggerDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/EnemyTriggerDetection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/NPCController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/NPCController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyAttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyIdleState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyIdleState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyIdleState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyPatrolState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/NPC/States/EnemyPatrolState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/Player/PlayerAnimationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/Player/PlayerAnimationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/Player/PlayerMutiationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Main/Project/Scripts/Player/PlayerMutiationController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +106,8 @@
       <workItem from="1723974313436" duration="19939000" />
       <workItem from="1724002621958" duration="478000" />
       <workItem from="1724014535180" duration="1331000" />
-      <workItem from="1724086493156" duration="5719000" />
+      <workItem from="1724086493156" duration="6253000" />
+      <workItem from="1724107362674" duration="2228000" />
     </task>
     <servers />
   </component>

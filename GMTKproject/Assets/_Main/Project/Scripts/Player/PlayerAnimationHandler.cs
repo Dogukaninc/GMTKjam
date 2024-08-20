@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class PlayerAnimationHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Animator _animator;
 
-    // Update is called once per frame
-    void Update()
+    //Little Mouse Anims
+    public void PlayRunAnimation(float velocity)
     {
-        
+        _animator.SetFloat("Velocity", velocity);
     }
+    
+    //Mutant Mouse Anims
+    
 }
